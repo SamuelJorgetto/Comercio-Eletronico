@@ -1,0 +1,192 @@
+-- Criação da tabela "Produtos"
+CREATE TABLE Produtos (
+    ID NUMBER PRIMARY KEY,
+    Nome VARCHAR2(50),
+    Descricao VARCHAR2(50),
+    Preco DECIMAL(10, 2),
+    QuantidadeEmEstoque NUMBER
+);
+
+INSERT INTO Produtos (ID, Nome, Descricao, Preco, QuantidadeEmEstoque) VALUES (1, 'Camiseta', 'Camiseta de algodão preta', 19.99, 50);
+INSERT INTO Produtos (ID, Nome, Descricao, Preco, QuantidadeEmEstoque) VALUES (2, 'Tênis', 'Tênis esportivo branco', 49.99, 75);
+INSERT INTO Produtos (ID, Nome, Descricao, Preco, QuantidadeEmEstoque) VALUES (3, 'Relógio', 'Relógio de pulso prateado', 29.99, 30);
+INSERT INTO Produtos (ID, Nome, Descricao, Preco, QuantidadeEmEstoque) VALUES (4, 'Mochila', 'Mochila resistente para viagens', 39.99, 40);
+INSERT INTO Produtos (ID, Nome, Descricao, Preco, QuantidadeEmEstoque) VALUES (5, 'Fone de Ouvido', 'Fone de ouvido sem fio', 59.99, 60);
+INSERT INTO Produtos (ID, Nome, Descricao, Preco, QuantidadeEmEstoque) VALUES (6, 'Mouse', 'Mouse óptico para computador', 9.99, 100);
+INSERT INTO Produtos (ID, Nome, Descricao, Preco, QuantidadeEmEstoque) VALUES (7, 'Teclado', 'Teclado mecânico para jogos', 79.99, 25);
+INSERT INTO Produtos (ID, Nome, Descricao, Preco, QuantidadeEmEstoque) VALUES (8, 'Smartphone', 'Smartphone Android de última geração', 299.99, 15);
+INSERT INTO Produtos (ID, Nome, Descricao, Preco, QuantidadeEmEstoque) VALUES (9, 'Tablet', 'Tablet de 10 polegadas', 149.99, 20);
+INSERT INTO Produtos (ID, Nome, Descricao, Preco, QuantidadeEmEstoque) VALUES (10, 'Impressora', 'Impressora a jato de tinta', 89.99, 35);
+INSERT INTO Produtos (ID, Nome, Descricao, Preco, QuantidadeEmEstoque) VALUES (11, 'Monitor', 'Monitor LED de 27 polegadas', 199.99, 10);
+INSERT INTO Produtos (ID, Nome, Descricao, Preco, QuantidadeEmEstoque) VALUES (12, 'Cadeira', 'Cadeira ergonômica para escritório', 129.99, 45);
+INSERT INTO Produtos (ID, Nome, Descricao, Preco, QuantidadeEmEstoque) VALUES (13, 'Livro', 'Best-seller de ficção', 14.99, 80);
+INSERT INTO Produtos (ID, Nome, Descricao, Preco, QuantidadeEmEstoque) VALUES (14, 'Caneta', 'Caneta esferográfica', 1.99, 500);
+INSERT INTO Produtos (ID, Nome, Descricao, Preco, QuantidadeEmEstoque) VALUES (15, 'Pasta', 'Pasta de couro para documentos', 24.99, 30);
+INSERT INTO Produtos (ID, Nome, Descricao, Preco, QuantidadeEmEstoque) VALUES (16, 'Cafeteira', 'Cafeteira programável', 34.99, 15);
+INSERT INTO Produtos (ID, Nome, Descricao, Preco, QuantidadeEmEstoque) VALUES (17, 'Garrafa Térmica', 'Garrafa térmica de aço inoxidável', 12.99, 70);
+INSERT INTO Produtos (ID, Nome, Descricao, Preco, QuantidadeEmEstoque) VALUES (18, 'Ventilador', 'Ventilador de mesa', 39.99, 40);
+INSERT INTO Produtos (ID, Nome, Descricao, Preco, QuantidadeEmEstoque) VALUES (19, 'Cadeado', 'Cadeado de segurança', 6.99, 90);
+INSERT INTO Produtos (ID, Nome, Descricao, Preco, QuantidadeEmEstoque) VALUES (20, 'Luminária', 'Luminária de mesa LED', 19.99, 60);
+COMMIT;
+
+
+
+
+-- Criação da tabela "Clientes"
+CREATE TABLE Clientes (
+    ID NUMBER PRIMARY KEY,
+    Nome VARCHAR2(255),
+    EnderecoEntrega VARCHAR2(50),
+    InformacoesDeContato VARCHAR2(50)
+);
+
+
+INSERT INTO Clientes (ID, Nome, EnderecoEntrega, InformacoesDeContato) VALUES (1, 'Maria Silva', 'Rua Principal, 123', 'maria@email.com');
+INSERT INTO Clientes (ID, Nome, EnderecoEntrega, InformacoesDeContato) VALUES (2, 'João Santos', 'Avenida Central, 456', 'joao@email.com');
+INSERT INTO Clientes (ID, Nome, EnderecoEntrega, InformacoesDeContato) VALUES (3, 'Pedro Oliveira', 'Rua das Flores, 789', 'pedro@email.com');
+INSERT INTO Clientes (ID, Nome, EnderecoEntrega, InformacoesDeContato) VALUES (4, 'Ana Souza', 'Avenida dos Pássaros, 321', 'ana@email.com');
+INSERT INTO Clientes (ID, Nome, EnderecoEntrega, InformacoesDeContato) VALUES (5, 'Lucas Alves', 'Rua das Árvores, 654', 'lucas@email.com');
+INSERT INTO Clientes (ID, Nome, EnderecoEntrega, InformacoesDeContato) VALUES (6, 'Isabela Pereira', 'Avenida do Sol, 789', 'isabela@email.com');
+INSERT INTO Clientes (ID, Nome, EnderecoEntrega, InformacoesDeContato) VALUES (7, 'Rafael Lima', 'Rua da Praia, 987', 'rafael@email.com');
+INSERT INTO Clientes (ID, Nome, EnderecoEntrega, InformacoesDeContato) VALUES (8, 'Larissa Fernandes', 'Avenida da Montanha, 543', 'larissa@email.com');
+INSERT INTO Clientes (ID, Nome, EnderecoEntrega, InformacoesDeContato) VALUES (9, 'Bruno Costa', 'Rua da Floresta, 123', 'bruno@email.com');
+INSERT INTO Clientes (ID, Nome, EnderecoEntrega, InformacoesDeContato) VALUES (10, 'Mariana Rodrigues', 'Avenida dos Lagos, 456', 'mariana@email.com');
+INSERT INTO Clientes (ID, Nome, EnderecoEntrega, InformacoesDeContato) VALUES (11, 'Carlos Cardoso', 'Rua das Montanhas, 789', 'carlos@email.com');
+INSERT INTO Clientes (ID, Nome, EnderecoEntrega, InformacoesDeContato) VALUES (12, 'Carla Santos', 'Avenida das Praias, 654', 'carla@email.com');
+INSERT INTO Clientes (ID, Nome, EnderecoEntrega, InformacoesDeContato) VALUES (13, 'André Silva', 'Rua do Campo, 789', 'andre@email.com');
+INSERT INTO Clientes (ID, Nome, EnderecoEntrega, InformacoesDeContato) VALUES (14, 'Luisa Pereira', 'Avenida da Cidade, 123', 'luisa@email.com');
+INSERT INTO Clientes (ID, Nome, EnderecoEntrega, InformacoesDeContato) VALUES (15, 'Rodrigo Almeida', 'Rua da Serra, 456', 'rodrigo@email.com');
+INSERT INTO Clientes (ID, Nome, EnderecoEntrega, InformacoesDeContato) VALUES (16, 'Juliana Rodrigues', 'Avenida das Flores, 789', 'juliana@email.com');
+INSERT INTO Clientes (ID, Nome, EnderecoEntrega, InformacoesDeContato) VALUES (17, 'Gustavo Costa', 'Rua das Aves, 123', 'gustavo@email.com');
+INSERT INTO Clientes (ID, Nome, EnderecoEntrega, InformacoesDeContato) VALUES (18, 'Fernanda Oliveira', 'Avenida das Árvores, 456', 'fernanda@email.com');
+INSERT INTO Clientes (ID, Nome, EnderecoEntrega, InformacoesDeContato) VALUES (19, 'Diego Lima', 'Rua dos Lagos, 789', 'diego@email.com');
+INSERT INTO Clientes (ID, Nome, EnderecoEntrega, InformacoesDeContato) VALUES (20, 'Bianca Fernandes', 'Avenida dos Montes, 123', 'bianca@email.com');
+COMMIT;
+
+
+-- Criação da tabela "Pedidos"
+CREATE TABLE Pedidos (
+    ID NUMBER PRIMARY KEY,
+    Data DATE,
+    ClienteID NUMBER,
+    Status VARCHAR2(50),
+    FOREIGN KEY (ClienteID) REFERENCES Clientes(ID)
+);
+
+INSERT INTO Pedidos (ID, Data, ClienteID, Status) VALUES (1, TO_DATE('2023-10-30', 'YYYY-MM-DD'), 1, 'Em processamento');
+INSERT INTO Pedidos (ID, Data, ClienteID, Status) VALUES (2, TO_DATE('2023-10-30', 'YYYY-MM-DD'), 2, 'Aguardando pagamento');
+INSERT INTO Pedidos (ID, Data, ClienteID, Status) VALUES (3, TO_DATE('2023-10-29', 'YYYY-MM-DD'), 3, 'Concluído');
+INSERT INTO Pedidos (ID, Data, ClienteID, Status) VALUES (4, TO_DATE('2023-10-28', 'YYYY-MM-DD'), 4, 'Em processamento');
+INSERT INTO Pedidos (ID, Data, ClienteID, Status) VALUES (5, TO_DATE('2023-10-28', 'YYYY-MM-DD'), 5, 'Aguardando pagamento');
+INSERT INTO Pedidos (ID, Data, ClienteID, Status) VALUES (6, TO_DATE('2023-10-27', 'YYYY-MM-DD'), 6, 'Concluído');
+INSERT INTO Pedidos (ID, Data, ClienteID, Status) VALUES (7, TO_DATE('2023-10-26', 'YYYY-MM-DD'), 7, 'Em processamento');
+INSERT INTO Pedidos (ID, Data, ClienteID, Status) VALUES (8, TO_DATE('2023-10-26', 'YYYY-MM-DD'), 8, 'Aguardando pagamento');
+INSERT INTO Pedidos (ID, Data, ClienteID, Status) VALUES (9, TO_DATE('2023-10-25', 'YYYY-MM-DD'), 9, 'Concluído');
+INSERT INTO Pedidos (ID, Data, ClienteID, Status) VALUES (10, TO_DATE('2023-10-25', 'YYYY-MM-DD'), 10, 'Em processamento');
+INSERT INTO Pedidos (ID, Data, ClienteID, Status) VALUES (11, TO_DATE('2023-10-24', 'YYYY-MM-DD'), 11, 'Aguardando pagamento');
+INSERT INTO Pedidos (ID, Data, ClienteID, Status) VALUES (12, TO_DATE('2023-10-24', 'YYYY-MM-DD'), 12, 'Concluído');
+INSERT INTO Pedidos (ID, Data, ClienteID, Status) VALUES (13, TO_DATE('2023-10-23', 'YYYY-MM-DD'), 13, 'Em processamento');
+INSERT INTO Pedidos (ID, Data, ClienteID, Status) VALUES (14, TO_DATE('2023-10-23', 'YYYY-MM-DD'), 14, 'Aguardando pagamento');
+INSERT INTO Pedidos (ID, Data, ClienteID, Status) VALUES (15, TO_DATE('2023-10-22', 'YYYY-MM-DD'), 15, 'Concluído');
+INSERT INTO Pedidos (ID, Data, ClienteID, Status) VALUES (16, TO_DATE('2023-10-22', 'YYYY-MM-DD'), 16, 'Em processamento');
+INSERT INTO Pedidos (ID, Data, ClienteID, Status) VALUES (17, TO_DATE('2023-10-21', 'YYYY-MM-DD'), 17, 'Aguardando pagamento');
+INSERT INTO Pedidos (ID, Data, ClienteID, Status) VALUES (18, TO_DATE('2023-10-21', 'YYYY-MM-DD'), 18, 'Concluído');
+INSERT INTO Pedidos (ID, Data, ClienteID, Status) VALUES (19, TO_DATE('2023-10-20', 'YYYY-MM-DD'), 19, 'Em processamento');
+INSERT INTO Pedidos (ID, Data, ClienteID, Status) VALUES (20, TO_DATE('2023-10-20', 'YYYY-MM-DD'), 20, 'Aguardando pagamento');
+COMMIT;
+
+
+-- Criação da tabela "ItensDePedido"
+CREATE TABLE ItensDePedido (
+    ID NUMBER PRIMARY KEY,
+    PedidoID NUMBER,
+    ProdutoID NUMBER,
+    Quantidade NUMBER,
+    FOREIGN KEY (PedidoID) REFERENCES Pedidos(ID),
+    FOREIGN KEY (ProdutoID) REFERENCES Produtos(ID)
+);
+
+INSERT INTO ItensDePedido (ID, PedidoID, ProdutoID, Quantidade) VALUES (1, 1, 1, 2);
+INSERT INTO ItensDePedido (ID, PedidoID, ProdutoID, Quantidade) VALUES (2, 1, 2, 3);
+INSERT INTO ItensDePedido (ID, PedidoID, ProdutoID, Quantidade) VALUES (3, 2, 3, 1);
+INSERT INTO ItensDePedido (ID, PedidoID, ProdutoID, Quantidade) VALUES (4, 2, 4, 2);
+INSERT INTO ItensDePedido (ID, PedidoID, ProdutoID, Quantidade) VALUES (5, 3, 5, 1);
+INSERT INTO ItensDePedido (ID, PedidoID, ProdutoID, Quantidade) VALUES (6, 3, 6, 4);
+INSERT INTO ItensDePedido (ID, PedidoID, ProdutoID, Quantidade) VALUES (7, 4, 7, 2);
+INSERT INTO ItensDePedido (ID, PedidoID, ProdutoID, Quantidade) VALUES (8, 4, 8, 1);
+INSERT INTO ItensDePedido (ID, PedidoID, ProdutoID, Quantidade) VALUES (9, 5, 9, 3);
+INSERT INTO ItensDePedido (ID, PedidoID, ProdutoID, Quantidade) VALUES (10, 5, 10, 2);
+INSERT INTO ItensDePedido (ID, PedidoID, ProdutoID, Quantidade) VALUES (11, 6, 11, 1);
+INSERT INTO ItensDePedido (ID, PedidoID, ProdutoID, Quantidade) VALUES (12, 6, 12, 2);
+INSERT INTO ItensDePedido (ID, PedidoID, ProdutoID, Quantidade) VALUES (13, 7, 13, 3);
+INSERT INTO ItensDePedido (ID, PedidoID, ProdutoID, Quantidade) VALUES (14, 7, 14, 4);
+INSERT INTO ItensDePedido (ID, PedidoID, ProdutoID, Quantidade) VALUES (15, 8, 15, 1);
+INSERT INTO ItensDePedido (ID, PedidoID, ProdutoID, Quantidade) VALUES (16, 8, 16, 2);
+INSERT INTO ItensDePedido (ID, PedidoID, ProdutoID, Quantidade) VALUES (17, 9, 17, 2);
+INSERT INTO ItensDePedido (ID, PedidoID, ProdutoID, Quantidade) VALUES (18, 9, 18, 3);
+INSERT INTO ItensDePedido (ID, PedidoID, ProdutoID, Quantidade) VALUES (19, 10, 19, 1);
+INSERT INTO ItensDePedido (ID, PedidoID, ProdutoID, Quantidade) VALUES (20, 10, 20, 4);
+COMMIT;
+
+
+
+CREATE OR REPLACE PROCEDURE AdicionarProdutoAoCarrinho (
+    ClienteID IN NUMBER,
+    ProdutoID IN NUMBER,
+    Quantidade IN NUMBER
+) AS
+BEGIN
+    INSERT INTO ItensDePedido (PedidoID, ProdutoID, Quantidade)
+    VALUES (
+        (SELECT MAX(ID) + 1 FROM Pedidos),
+        ProdutoID,
+        Quantidade
+    );
+END AdicionarProdutoAoCarrinho;
+/
+
+
+CREATE OR REPLACE PROCEDURE ProcessarPedido (
+    PedidoID IN NUMBER
+) AS
+BEGIN
+    -- Atualizar o estoque de produtos com base nos itens do pedido
+    FOR Item IN (SELECT ProdutoID, Quantidade FROM ItensDePedido WHERE PedidoID = PedidoID) LOOP
+        UPDATE Produtos
+        SET QuantidadeEmEstoque = QuantidadeEmEstoque - Item.Quantidade
+        WHERE ID = Item.ProdutoID;
+    END LOOP;
+
+    -- Atualizar o status do pedido para "Processado"
+    UPDATE Pedidos
+    SET Status = 'Processado'
+    WHERE ID = PedidoID;
+END ProcessarPedido;
+/
+
+
+CREATE OR REPLACE PROCEDURE CalcularTotalDoPedido (
+    PedidoID IN NUMBER,
+    Total OUT NUMBER
+) AS
+BEGIN
+    SELECT SUM(P.Preco * IP.Quantidade)
+    INTO Total
+    FROM Produtos P
+    JOIN ItensDePedido IP ON P.ID = IP.ProdutoID
+    WHERE IP.PedidoID = PedidoID;
+END CalcularTotalDoPedido;
+/
+
+
+CREATE OR REPLACE VIEW HistoricoDePedidos AS
+SELECT P.ID AS PedidoID, P.Data, P.Status, C.Nome AS Cliente,
+       I.Nome AS Produto, IP.Quantidade
+FROM Pedidos P
+JOIN Clientes C ON P.ClienteID = C.ID
+JOIN ItensDePedido IP ON P.ID = IP.PedidoID
+JOIN Produtos I ON IP.ProdutoID = I.ID;
+
+
+CREATE OR REPLACE VIEW ProdutosDisponiveis AS
+SELECT * FROM Produtos WHERE QuantidadeEmEstoque > 0;
